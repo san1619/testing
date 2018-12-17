@@ -1,5 +1,4 @@
 package assign;
-import java.util.Scanner;
 
 public class Space {
 	
@@ -21,7 +20,7 @@ public class Space {
 	    
 	    public static void main (String args[])
 	    {
-	        res=SpaceCount.spacecount("i am adult ");
+	        res=SpaceCount.spacecount("my name is santoshi ");
 	        //string is always passed in double quotes
 	        
 	        System.out.println("The number of white spaces  in the String are :  "+res);
