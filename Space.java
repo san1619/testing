@@ -2,28 +2,28 @@ package assign;
 import java.util.Scanner;
 
 public class Space {
-
-	    public static void main(String[]args)
+	
+	    
+	    static int i,c=0,res;
+		private static Space SpaceCount;
+	    
+	    
+	    static int spacecount(String s)
 	    {
-	        Scanner sc=new Scanner(System.in);
-	        System.out.println("enter the string...");
-	        String s1=sc.nextLine();
-	        int l=s1.length();
-	        int count=0;
-	        for(int i=0;i<l;i++)
+	        for(i=0,c=0;i<s.length();i++)
 	        {
-	            char c=s1.charAt(i);
-	            if(c==' ')
-	            {
-	            System.out.println("spaces are in the position of "+i);
-	            System.out.println(count++);
-	            }
-	            else
-	            {
-	            System.out.println("no spaces are there");
+	            char ch=s.charAt(i);
+	            if(ch==' ')
+	            c++;
 	        }
-
-}
+	        return c;
 	    }
-	  
+	    
+	    public static void main (String args[])
+	    {
+	        res=SpaceCount.spacecount("i am adult ");
+	        //string is always passed in double quotes
+	        
+	        System.out.println("The number of white spaces  in the String are :  "+res);
 	    }
+	}
