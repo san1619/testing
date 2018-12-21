@@ -13,6 +13,7 @@ package assign;
 	 
 	   
 	 // A Class that uses above JavaException 
+	     private proto proto = new proto();
 	      
 	     
 		 // Driver Program 
